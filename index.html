@@ -8,8 +8,6 @@
                
 <body>
     <div id="mainArea">
-    <p align="center"><font size="10" >鳴らした回数は
-<span id="press-button">0</span>回
 </font></p>
     <img id="image_file" src="map.jpg" alt="" onclick="henkou()">
 
@@ -21,10 +19,7 @@
         if(count === 0){
           count++;
           document.getElementById("image_file").src = img_src2;
-        }
-        
-        if(count === 1){
-          
+        } else {
           document.getElementById("image_file").src = img_src;
           count--;
         }
